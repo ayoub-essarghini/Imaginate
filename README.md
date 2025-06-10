@@ -47,7 +47,7 @@ yarn install
 Create a .env.local file:
 
 ```bash
-VYRO_API_TOKEN=your_token_here
+NEXT_PUBLIC_VYRO_API_TOKEN=your_token_here
 ```
 
 ```bash
