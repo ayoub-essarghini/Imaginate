@@ -66,7 +66,7 @@ export default function Home() {
       });
       const { imageUrl } = res.data;
       setImageUrl(imageUrl);
-      setPrompt("");
+      // setPrompt("");
       
       // Animate result appearance
       setTimeout(() => {
