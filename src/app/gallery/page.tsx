@@ -45,7 +45,7 @@ export default function Gallery() {
       tags: ["mountains", "landscape", "sunrise", "lake"],
       source: "National Gallery Open Access",
       aspectRatio: "square",
-      imageUrl: "/placeholder.svg?height=1024&width=1024&text=Mountain+Landscape&background=0B4A6F",
+      imageUrl: "https://images.unsplash.com/photos/kAgbm1Ii7PI",
     },
     {
       id: 2,

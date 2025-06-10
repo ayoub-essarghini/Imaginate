@@ -365,7 +365,7 @@ export default function LandingPage() {
 
           <div className="hero-cta">
             <a
-              href="/gallery"
+              href="/generate"
               className="group relative inline-flex items-center px-12 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
