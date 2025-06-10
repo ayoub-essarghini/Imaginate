@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Imaginate – AI Text-to-Image Generator
 
-## Getting Started
+**Imaginate** is a simple yet powerful web app that turns natural language prompts into stunning AI-generated images — all in your browser. Built with **Next.js**, **Tailwind CSS**, and powered by the **Vyro AI API**, this project makes it easy to generate creative visuals from text.
 
-First, run the development server:
+Perfect for developers, designers, or anyone who wants to bring their imagination to life — fast, free, and open source!
+
+---
+
+## 🔍 What Can You Do?
+
+- ✅ Type a prompt like `"A futuristic cityscape at night with neon lights"`
+- 🖼️ Get a high-quality image generated instantly
+- 💾 Download or share your result
+- 🧠 Easily plug in other AI APIs like DALL·E, Replicate, or Stable Diffusion
+
+---
+
+## 🧩 Tech Stack
+
+| Tool/Service       | Purpose                            |
+|--------------------|------------------------------------|
+| **Next.js**        | Full-stack React framework         |
+| **TypeScript**     | Strong typing                      |
+| **Tailwind CSS**   | Utility-first styling              |
+| **GSAP**           | Scroll animations on landing page  |
+| **Vyro AI API**    | Image generation                   |
+| **Git / GitHub**   | Version control & collaboration    |
+
+> ✅ Easy to extend with other AI APIs or features.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/ayoub-essarghini/Imaginate.git 
+cd Imaginate
+
+npm install
+# or
+yarn install
+
+```
+
+Create a .env.local file:
+
+```bash
+VYRO_API_TOKEN=your_token_here
+```
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 in your browser.
