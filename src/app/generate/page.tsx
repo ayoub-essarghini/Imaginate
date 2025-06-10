@@ -12,7 +12,7 @@ export default function Home() {
 
    const buttonRef = useRef<HTMLButtonElement>(null);
 
-  const handleKeyDown = (e:any) => {
+  const handleKeyDown = (e:React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === 'Enter' && buttonRef.current) {
       buttonRef.current.click();
     }
