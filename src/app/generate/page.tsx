@@ -122,9 +122,7 @@ export default function Home() {
             <span className="hero-word inline-block mr-4 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
               Image
             </span>
-            <span className="hero-word inline-block bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent">
-              AI
-            </span>
+            
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
@@ -160,7 +158,7 @@ export default function Home() {
                           <div className="text-center">
                             <div className="animate-spin rounded-full h-12 w-12 border-4 border-purple-400/30 border-t-purple-400 mb-4 mx-auto"></div>
                             <p className="text-slate-300 text-sm">Creating your image...</p>
-                            <p className="text-slate-400 text-xs mt-1">This usually takes 10-30 seconds</p>
+                            <p className="text-slate-400 text-xs mt-1">This usually takes 05-30 seconds</p>
                           </div>
                         </div>
                       </div>
@@ -197,7 +195,7 @@ export default function Home() {
                             <svg className="mr-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                             </svg>
-                            <span className="relative">New Image</span>
+                            <span className="relative cursor-pointer">New Image</span>
                           </button>
                         </div>
                       </div>
@@ -219,7 +217,7 @@ export default function Home() {
                   </div>
                 ) : (
                   <div className="flex items-center justify-center">
-                    <span className="relative">Generate Amazing Image</span>
+                    <span className="relative cursor-pointer">Generate Amazing Image</span>
                     <svg
                       className="relative ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"
@@ -241,7 +239,7 @@ export default function Home() {
                   <button
                     key={index}
                     onClick={() => setPrompt(example)}
-                    className="text-left p-4 bg-slate-800/30 border border-slate-700/30 rounded-xl hover:bg-slate-700/40 hover:border-slate-600/50 transition-all duration-300 text-sm text-slate-300 hover:text-white group"
+                    className="text-left p-4 cursor-pointer bg-slate-800/30 border border-slate-700/30 rounded-xl hover:bg-slate-700/40 hover:border-slate-600/50 transition-all duration-300 text-sm text-slate-300 hover:text-white group"
                   >
                     <div className="flex items-start">
                       <div className="w-2 h-2 bg-purple-400 rounded-full mt-2 mr-3 opacity-60 group-hover:opacity-100 transition-opacity" />
@@ -261,7 +259,7 @@ export default function Home() {
       <section className="relative py-24 px-6" style={{ background: "linear-gradient(to bottom, #0f172a 0%, #1e1b4b 100%)" }}>
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-            Why Choose Text-to-Image AI?
+            Why Choose Imaginate?
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

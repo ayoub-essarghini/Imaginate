@@ -255,62 +255,63 @@ export default function LandingPage() {
   ]
 
   // Real examples based on popular AI image generation prompts and categories
-  const examples = [
-    {
-      prompt: "A majestic dragon flying over a medieval castle at sunset, hyperrealistic, cinematic lighting",
-      style: "Fantasy Art",
-      color: "from-purple-400 to-pink-400",
-      category: "Fantasy",
-      technique: "DALL-E 3",
-      popularity: "Popular",
-      imageUrl: "/placeholder.svg?height=1024&width=1024&text=Dragon+Castle&background=800080",
-    },
-    {
-      prompt: "Modern minimalist living room with floor-to-ceiling windows, natural lighting, Scandinavian design",
-      style: "Architecture",
-      color: "from-blue-400 to-cyan-400",
-      category: "Interior Design",
-      technique: "Midjourney v6",
-      popularity: "Trending",
-      imageUrl: "/placeholder.svg?height=1024&width=1024&text=Minimalist+Interior&background=4682B4",
-    },
-    {
-      prompt: "Portrait of an elderly wizard with glowing blue eyes, detailed beard, magical staff, digital art",
-      style: "Character Design",
-      color: "from-green-400 to-emerald-400",
-      category: "Characters",
-      technique: "Stable Diffusion XL",
-      popularity: "Featured",
-      imageUrl: "/placeholder.svg?height=1024&width=1024&text=Wizard+Portrait&background=2E8B57",
-    },
-    {
-      prompt: "Cyberpunk cityscape at night with neon lights and flying vehicles, rain reflections, futuristic",
-      style: "Sci-Fi",
-      color: "from-indigo-400 to-purple-400",
-      category: "Sci-Fi",
-      technique: "Midjourney v6",
-      popularity: "Most Used",
-      imageUrl: "/placeholder.svg?height=1024&width=1024&text=Cyberpunk+City&background=4B0082",
-    },
-    {
-      prompt: "Adorable cartoon cat wearing a tiny top hat and monocle, Victorian style, watercolor painting",
-      style: "Cartoon",
-      color: "from-pink-400 to-rose-400",
-      category: "Cartoon",
-      technique: "DALL-E 3",
-      popularity: "Community Choice",
-      imageUrl: "/placeholder.svg?height=1024&width=1024&text=Cartoon+Cat&background=FF69B4",
-    },
-    {
-      prompt: "Abstract geometric mandala with vibrant colors, sacred geometry, spiritual art, high contrast",
-      style: "Abstract Art",
-      color: "from-yellow-400 to-orange-400",
-      category: "Abstract",
-      technique: "Adobe Firefly",
-      popularity: "Artist's Pick",
-      imageUrl: "/placeholder.svg?height=1024&width=1024&text=Abstract+Mandala&background=FF8C00",
-    },
-  ]
+const examples = [
+  {
+    prompt: "A majestic dragon flying over a medieval castle at sunset, hyperrealistic, cinematic lighting",
+    style: "Fantasy Art",
+    color: "from-purple-400 to-pink-400",
+    category: "Fantasy",
+    technique: "DALL-E 3",
+    popularity: "Popular",
+    imageUrl: "/gallery/dragon.png",
+  },
+  {
+    prompt: "Modern minimalist living room with floor-to-ceiling windows, natural lighting, Scandinavian design",
+    style: "Architecture",
+    color: "from-blue-400 to-cyan-400",
+    category: "Interior Design",
+    technique: "Midjourney v6",
+    popularity: "Trending",
+    imageUrl: "/gallery/living-room.png",
+  },
+  {
+    prompt: "Portrait of an elderly wizard with glowing blue eyes, detailed beard, magical staff, digital art",
+    style: "Character Design",
+    color: "from-green-400 to-emerald-400",
+    category: "Characters",
+    technique: "Stable Diffusion XL",
+    popularity: "Featured",
+    imageUrl: "/gallery/portrait.png",
+  },
+  {
+    prompt: "Cyberpunk cityscape at night with neon lights and flying vehicles, rain reflections, futuristic",
+    style: "Sci-Fi",
+    color: "from-indigo-400 to-purple-400",
+    category: "Sci-Fi",
+    technique: "Midjourney v6",
+    popularity: "Most Used",
+    imageUrl: "/gallery/cyberpunk.png",
+  },
+  {
+    prompt: "Adorable cartoon cat wearing a tiny top hat and monocle, Victorian style, watercolor painting",
+    style: "Cartoon",
+    color: "from-pink-400 to-rose-400",
+    category: "Cartoon",
+    technique: "DALL-E 3",
+    popularity: "Community Choice",
+    imageUrl: "/gallery/cat.png",
+  },
+  {
+    prompt: "Abstract geometric mandala with vibrant colors, sacred geometry, spiritual art, high contrast",
+    style: "Abstract Art",
+    color: "from-yellow-400 to-orange-400",
+    category: "Abstract",
+    technique: "Adobe Firefly",
+    popularity: "Artist's Pick",
+    imageUrl: "/gallery/mandala.png",
+  },
+]
+
 
   return (
     <div className="bg-slate-900 min-h-screen text-white overflow-hidden">
@@ -326,7 +327,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative flex flex-col items-center justify-center min-h-screen px-6 text-center"
+        className="relative flex flex-col items-center justify-center h-[calc(100vh-60px)] px-6 text-center"
         style={{
           background:
             "radial-gradient(ellipse at top, rgba(139, 92, 246, 0.15) 0%, transparent 50%), linear-gradient(to bottom, #0f172a 0%, #1e1b4b 50%, #581c87 100%)",
@@ -528,7 +529,7 @@ export default function LandingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
-              href="/gallery"
+              href="/generate"
               className="group inline-flex items-center px-10 py-4 text-lg font-bold text-purple-900 bg-white rounded-full shadow-2xl hover:shadow-white/20 transition-all duration-300 hover:scale-105"
             >
               <span className="relative">Start Generating</span>
