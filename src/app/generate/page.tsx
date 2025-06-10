@@ -9,6 +9,14 @@ export default function Home() {
   const heroRef = useRef<HTMLElement>(null);
   const resultRef = useRef<HTMLDivElement>(null);
 
+
+   const buttonRef = useRef<HTMLButtonElement>(null);
+
+  const handleKeyDown = (e:any) => {
+    if (e.key === 'Enter' && buttonRef.current) {
+      buttonRef.current.click();
+    }
+  };
   useEffect(() => {
     // Animate floating background elements
     const animateFloatingElements = () => {
@@ -139,6 +147,7 @@ export default function Home() {
                 <textarea
                   value={prompt}
                   onChange={(e) => setPrompt(e.target.value)}
+                  onKeyDown={handleKeyDown}
                   placeholder="A majestic dragon flying over a medieval castle at sunset, digital art, highly detailed..."
                   className="w-full p-4 bg-slate-700/50 border border-slate-600/50 rounded-2xl text-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-purple-500/50 focus:border-transparent transition-all duration-300 resize-none"
                   rows={4}
@@ -203,11 +212,12 @@ export default function Home() {
                   </div>
                 </div>
               )}
-              
               <button
+                ref={buttonRef}
                 onClick={handleSubmit}
                 disabled={loading || !prompt.trim()}
                 className="generate-btn group relative w-full md:w-auto px-12 py-4 text-lg font-bold text-white bg-gradient-to-r from-purple-600 to-pink-600 rounded-full shadow-2xl hover:shadow-purple-500/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed hover:scale-105"
+              
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
                 {loading ? (
