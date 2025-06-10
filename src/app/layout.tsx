@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import {  Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AI Headshot Platform',
+  title: 'Imaginate - AI Image Generation',
+  authors: [
+    {
+      name: 'Ayoub Es-Sarghini',
+      url: 'https://ayoub-es-sarghini.netlify.app/',
+    },
+  ],
+  keywords: ['AI', 'Image Generation', 'Text to Image', 'Imaginate', 'AI Art', 'Generative AI', 'AI Images','create images from text', 'AI art generator'],
+
   description: 'Generate stunning AI images from text prompts',
 };
 
@@ -39,7 +47,7 @@ export default function RootLayout({
             </button>
           </div>
         </header>
-         <main className="pt-14">
+         <main className="pt-8">
           {children}
         </main>
       </body>

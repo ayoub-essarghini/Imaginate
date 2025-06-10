@@ -300,7 +300,7 @@ export default function Gallery() {
 
     window.addEventListener("keydown", handleKeyPress)
     return () => window.removeEventListener("keydown", handleKeyPress)
-  }, [selectedImage, filteredImages])
+  }, [selectedImage, filteredImages, navigateImage])
 
   return (
     <div className="min-h-screen bg-slate-900 text-white">
