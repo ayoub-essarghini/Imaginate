@@ -303,14 +303,14 @@ export default function Gallery() {
   }, [selectedImage, filteredImages, navigateImage])
 
   return (
-    <div className="min-h-screen bg-slate-900 text-white">
+    <div className="min-h-screen bg-slate-900 text-white mt-10">
       {/* Header */}
       <div className="sticky top-0 z-40 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             <div>
               <h1 className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                AI Gallery
+                Imaginate Gallery
               </h1>
               <p className="text-slate-400 mt-1">{filteredImages.length} stunning AI-generated images</p>
             </div>
